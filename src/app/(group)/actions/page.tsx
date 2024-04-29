@@ -1,7 +1,7 @@
 "use client";
 
 import { serverAction } from "@/actions/some-action";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 
 export default function ActionsPage() {
   const clientAction = () => {
@@ -11,6 +11,9 @@ export default function ActionsPage() {
   return (
     <div className="bg-white p-4 rounded-md shadow-sm max-w-screen-lg dark:text-black">
       <h1 className="text-4xl font-bold mb-8">Actions Page</h1>
+      <p>This page demonstrates client and server actions.</p>
+      <p className="mb-9">Click the buttons below and check the console (browser and terminal).</p>
+
       <div className="flex justify-between">
         <Button onClick={clientAction}>Client</Button>
 

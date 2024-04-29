@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { name: "Client", path: "/client" },
   { name: "Server", path: "/server" },
   { name: "Actions", path: "/actions" },
+  { name: "Store", path: "/store" },
 ];
 
 export const NavItems = () => {

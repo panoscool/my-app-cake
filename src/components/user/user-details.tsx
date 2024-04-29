@@ -1,4 +1,4 @@
-import { TUser } from "@/lib/fake-api";
+import { TUser } from "@/types/common";
 
 export const UsersDetails = ({ data }: { data: TUser | null }) => {
   console.log("UsersDetails", data);

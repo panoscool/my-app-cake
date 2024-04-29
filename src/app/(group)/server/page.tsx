@@ -1,11 +1,11 @@
-import { UsersList } from "@/app/_components/users-list";
-import { TUser, getDataList } from "@/lib/fake-api";
-
-// Opt out of caching for all data requests in the route segment
-export const dynamic = "force-dynamic";
+import { UsersList } from "@/components/user/users-list";
+import { getData } from "@/lib/fetch-api";
+import { TUser } from "@/types/common";
 
 export default async function ServerPage() {
-  const data: TUser[] = await getDataList("users").then((json) => json);
+  const data: TUser[] = await getData("users", { next: { revalidate: 10 } }).then(
+    (json) => json.data
+  );
 
   return (
     <div className="bg-white p-4 rounded-md shadow-sm max-w-screen-lg dark:text-black">

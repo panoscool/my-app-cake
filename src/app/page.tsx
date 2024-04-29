@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NavItems } from "./_components/nav-items";
+import { NavItems } from "../components/nav-items";
 
 export default function Home() {
   return (
