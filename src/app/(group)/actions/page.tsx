@@ -17,10 +17,10 @@ export default function ActionsPage() {
       <div className="flex justify-between">
         <Button onClick={clientAction}>Client</Button>
 
-        <Button onClick={() => serverAction()}>Server Action</Button>
+        <Button onClick={() => serverAction()}>Server Action 1</Button>
 
         <form action={serverAction}>
-          <Button type="submit">Server</Button>
+          <Button type="submit">Server Action 2</Button>
         </form>
       </div>
     </div>
