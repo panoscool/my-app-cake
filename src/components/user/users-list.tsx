@@ -1,6 +1,6 @@
 "use client";
 
-import { TUser } from "@/lib/fetch-api";
+import { TUser } from "@/types/common";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
