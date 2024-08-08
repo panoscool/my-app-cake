@@ -1,6 +1,6 @@
 "use client";
 
-import { serverAction } from "@/actions/some-action";
+import { serverAction, serverRedirectAction, serverRevalidateAction } from "@/actions/some-action";
 import { Button } from "@/components/ui/button";
 
 export default function ActionsPage() {
@@ -14,7 +14,7 @@ export default function ActionsPage() {
       <p>This page demonstrates client and server actions.</p>
       <p className="mb-9">Click the buttons below and check the console (browser and vscode).</p>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-4">
         <Button onClick={clientAction}>Client</Button>
 
         <Button onClick={() => serverAction()}>Server Action 1</Button>
@@ -22,6 +22,9 @@ export default function ActionsPage() {
         <form action={serverAction}>
           <Button type="submit">Server Action 2</Button>
         </form>
+
+        <Button onClick={() => serverRevalidateAction()}>Server Revalidate</Button>
+        <Button onClick={() => serverRedirectAction()}>Server Redirect</Button>
       </div>
     </div>
   );
