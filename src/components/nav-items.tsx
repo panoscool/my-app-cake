@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { name: "Server", path: "/server" },
   { name: "Actions", path: "/actions" },
   { name: "Store", path: "/store" },
+  { name: "Photos", path: "/photos" },
 ];
 
 export const NavItems = () => {

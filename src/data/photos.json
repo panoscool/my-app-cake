@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "title": "Phone",
+    "src": "/images/phone.webp"
+  },
+  {
+    "id": "2",
+    "title": "Tablet",
+    "src": "/images/tablet.webp"
+  },
+  {
+    "id": "3",
+    "title": "Laptop",
+    "src": "/images/laptop.webp"
+  },
+  {
+    "id": "4",
+    "title": "Technology",
+    "src": "/images/technology.webp"
+  },
+  {
+    "id": "5",
+    "title": "Earth",
+    "src": "/images/earth.webp"
+  }
+]
