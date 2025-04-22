@@ -1,12 +1,20 @@
 import { TUser } from "@/types/common";
 
-export const UsersDetails = ({ data }: { data: TUser | null }) => {
+export const UsersDetails = ({ data, isLoading }: { data: TUser | null; isLoading?: boolean }) => {
   console.log("UsersDetails", data);
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col gap-2">
+        <p>Loading...</p>
+      </div>
+    );
+  }
 
   if (!data) {
     return (
       <div className="flex flex-col gap-2">
-        <p>Loading...</p>
+        <p>No data found</p>
       </div>
     );
   }

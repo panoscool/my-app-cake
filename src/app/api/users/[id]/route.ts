@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import users from "@/data/users.json";
 
-export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(request: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const searchParams = request.nextUrl.searchParams;
   const userId = params.id ?? searchParams.get("id");
 

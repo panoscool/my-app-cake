@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    staleTimes: {
-      dynamic: 0,
-      static: 180,
-    },
-  },
+  experimental: {},
   images: {
     remotePatterns: [
       {
         hostname: "fakestoreapi.com",
+        protocol: "https",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

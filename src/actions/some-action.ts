@@ -9,6 +9,8 @@ export const serverAction = async () => {
 
 export const serverRedirectAction = async () => {
   console.log("Server Redirect");
+
+  // ATTENTION: Redirect should not be inside a try/catch block
   redirect("/some-path");
 };
 
