@@ -19,7 +19,7 @@ export function MultiStepForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm"
+      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm bg-white"
     >
       <ProgressIndicator current={state.step} />
       {state.step === 1 && <StepPersonal />}

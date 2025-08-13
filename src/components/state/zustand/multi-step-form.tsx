@@ -23,28 +23,26 @@ export function MultiStepFormZustand() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm"
+      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm bg-white"
     >
       <ProgressIndicator current={step} />
 
       {step === 1 && (
         <PersonalSection
           values={personal}
-          onFieldChange={(f: keyof typeof personal, v: string) =>
-            update("personal", f as string, v)
-          }
+          onFieldChange={(f: keyof typeof personal, v: string) => update("personal", f, v)}
         />
       )}
       {step === 2 && (
         <WorkSection
           values={work}
-          onFieldChange={(f: keyof typeof work, v: string) => update("work", f as string, v)}
+          onFieldChange={(f: keyof typeof work, v: string) => update("work", f, v)}
         />
       )}
       {step === 3 && (
         <AddressSection
           values={address}
-          onFieldChange={(f: keyof typeof address, v: string) => update("address", f as string, v)}
+          onFieldChange={(f: keyof typeof address, v: string) => update("address", f, v)}
         />
       )}
       <div className="flex items-center justify-between pt-4">

@@ -27,13 +27,9 @@ export function Form2() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm"
+      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm bg-white"
     >
-      <div>
-        Full Name: <strong>{fullName}</strong>
-      </div>
-
-      <PersonalForm values={formValues} onFieldChange={handleChange} />
+      <PersonalForm showHeading={false} values={formValues} onFieldChange={handleChange} />
 
       <div className="pt-2">
         <Button type="submit" className="w-full">

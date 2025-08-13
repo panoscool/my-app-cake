@@ -25,11 +25,12 @@ export function Form1() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm"
+      className="mx-auto max-w-md space-y-6 rounded-lg border p-6 shadow-sm bg-white"
     >
-      <div>
+      <div className="text-sm text-muted-foreground">
         Full Name: <strong>{fullName}</strong>
       </div>
+
       <div className="space-y-2">
         <Label htmlFor="firstName">Name</Label>
         <Input
