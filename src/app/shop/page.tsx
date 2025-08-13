@@ -1,15 +1,13 @@
 import { getData } from "@/lib/fetch-api";
 import { TProduct } from "@/types/common";
-import { ProductItem } from "../../components/store/product-item";
+import { ProductItem } from "../../components/shop/product-item";
 
-export default async function StorePage() {
+export default async function ShopPage() {
   const products = await getData("products", { cache: "force-cache" }).then((json) => json.data);
 
-  const randomValue = Math.random();
-
-  if (randomValue > 0.5) {
-    throw new Error("Random error");
-  }
+  // if (Math.random() > 0.5) {
+  //   throw new Error("Random error");
+  // }
 
   return (
     <div className="container mx-auto bg-white p-4 rounded-md shadow-sm max-w-screen-lg dark:text-black">

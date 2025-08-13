@@ -5,7 +5,8 @@ const NAV_ITEMS = [
   { name: "Client", path: "/client" },
   { name: "Server", path: "/server" },
   { name: "Actions", path: "/actions" },
-  { name: "Store", path: "/store" },
+  { name: "State", path: "/state" },
+  { name: "Shop", path: "/shop" },
   { name: "Photos", path: "/photos" },
 ];
 

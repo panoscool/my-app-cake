@@ -5,7 +5,7 @@ import Link from "next/link";
 export function ProductItem({ product }: { product: TProduct }) {
   return (
     <Link
-      href={`/store/${product.id}`}
+      href={`/shop/${product.id}`}
       className="bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-950 flex flex-col"
     >
       <Image
