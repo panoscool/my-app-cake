@@ -1,13 +1,13 @@
-import { getDataById } from "@/lib/fetch-api";
+import { simulateFetch } from "@/lib/fetch-sim";
 import { ProductDetails } from "../../../components/shop/product-details";
 
 export default async function ProductPage({ params }: { params: Promise<{ productId: string }> }) {
   const { productId } = await params;
-  const product = await getDataById("products", productId).then((json) => json.data);
+  const { data } = await simulateFetch("products", productId, { simulateDelayMs: 200 });
 
   return (
     <div>
-      <ProductDetails product={product} />
+      <ProductDetails product={data} />
     </div>
   );
 }
