@@ -1,9 +1,9 @@
 "use client";
 
 import { createContext, ReactNode, useContext, useReducer } from "react";
-import { PersonalState } from "./form-1";
-import { WorkState } from "./form-2";
-import { AddressState } from "./form-3";
+import { PersonalState } from "../form/form-1";
+import { WorkState } from "../form/form-2";
+import { AddressState } from "../form/form-3";
 
 type FormState = {
   step: number;
@@ -26,7 +26,6 @@ const initialState: FormState = {
   address: { street: "", city: "", state: "", postalCode: "", country: "US" },
 };
 
-// ----------------- Reducer -----------------
 function reducer(state: FormState, action: Action): FormState {
   switch (action.type) {
     case "UPDATE_FIELD": {

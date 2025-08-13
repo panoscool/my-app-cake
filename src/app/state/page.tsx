@@ -1,7 +1,7 @@
 "use client";
 
-import Form1 from "@/components/state/example-1";
-import Form2 from "@/components/state/example-2";
+import Form1 from "@/components/state/form-state-1";
+import Form2 from "@/components/state/form-state-2";
 import StateNav from "@/components/state/state-nav";
 import { Button } from "@/components/ui/button";
 import { ArrowLeftRight } from "lucide-react";

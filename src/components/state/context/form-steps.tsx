@@ -1,7 +1,7 @@
-import { useMultiStepForm } from "../example-context";
-import PersonalSection from "../form-1";
-import WorkSection from "../form-2";
-import AddressSection from "../form-3";
+import { useMultiStepForm } from "./form-context";
+import PersonalSection from "../form/form-1";
+import WorkSection from "../form/form-2";
+import AddressSection from "../form/form-3";
 
 export function StepPersonal() {
   const { state, update } = useMultiStepForm();

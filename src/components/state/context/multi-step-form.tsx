@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useMultiStepForm } from "../example-context";
+import { useMultiStepForm } from "./form-context";
 import { ProgressIndicator } from "../progress-indicator";
 import { StepAddress, StepPersonal, StepWork } from "./form-steps";
 

@@ -1,7 +1,7 @@
 import { create } from "zustand";
-import { PersonalState } from "../form-1";
-import { WorkState } from "../form-2";
-import { AddressState } from "../form-3";
+import { PersonalState } from "../form/form-1";
+import { WorkState } from "../form/form-2";
+import { AddressState } from "../form/form-3";
 
 export interface MultiStepFormSlice {
   step: number;

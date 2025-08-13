@@ -1,7 +1,7 @@
 "use client";
 
 import { MultiStepForm } from "@/components/state/context/multi-step-form";
-import { MultiStepFormProvider } from "@/components/state/example-context";
+import { MultiStepFormProvider } from "@/components/state/context/form-context";
 import StateNav from "@/components/state/state-nav";
 
 const ContextPage = () => {

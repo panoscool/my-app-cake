@@ -1,9 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import PersonalSection from "../form-1";
-import WorkSection from "../form-2";
-import AddressSection from "../form-3";
+import PersonalSection from "../form/form-1";
+import WorkSection from "../form/form-2";
+import AddressSection from "../form/form-3";
 import { useMultiStepZustand } from "./store";
 import { ProgressIndicator } from "../progress-indicator";
 

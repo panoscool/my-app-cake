@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import PersonalForm, { PersonalState } from "./form-1";
+import PersonalForm, { PersonalState } from "./form/form-1";
 import { Button } from "../ui/button";
 
 export function Form2() {
@@ -11,9 +11,6 @@ export function Form2() {
     age: "",
     gender: "female",
   });
-
-  // Derived value
-  const fullName = `${formValues.name} ${formValues.surname}`.trim();
 
   function handleChange(field: keyof PersonalState, value: string) {
     setFormValues((prev) => ({ ...prev, [field]: value }));
