@@ -12,11 +12,15 @@ export const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve
 export const getData = async (resource: TResource, options?: TOptions) => {
   // await delay(3000);
 
-  return fetch(`http://localhost:3000/api/${resource}`, options).then((res) => res.json());
+  return fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${resource}`, options).then((res) =>
+    res.json()
+  );
 };
 
 export const getDataById = async (resource: TResource, id: number | string, options?: TOptions) => {
   // await delay(1000);
 
-  return fetch(`http://localhost:3000/api/${resource}/${id}`, options).then((res) => res.json());
+  return fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/${resource}/${id}`, options).then((res) =>
+    res.json()
+  );
 };
